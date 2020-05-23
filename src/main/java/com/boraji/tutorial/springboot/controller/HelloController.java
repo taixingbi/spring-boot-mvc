@@ -19,4 +19,11 @@ public class HelloController {
       model.addAttribute("name", name);
       return "hello";
    }
+
+   @RequestMapping("/test")
+   public String test() {
+      return "hello world";
+   }
+
+
 }
